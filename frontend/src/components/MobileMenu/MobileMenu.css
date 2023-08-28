@@ -1,0 +1,64 @@
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.mobile-menu div{
+    width: 27px;
+    height: 1px;
+    background: #fff;
+    transition: 1s ease-in-out .1s;
+    position: relative;
+}
+
+.mobile-menu .line2 {
+    display: block;
+    width: 30px;
+    animation: widthLine .7s normal ;
+}
+
+.mobile-menu:hover .line1 {
+    width: 31px;
+    transition: .4s .1s;
+}
+
+.mobile-menu:hover .line2 {
+    width: 26px;
+    transition: .4s .1s;
+}
+
+.mobile-menu:hover .line3 {
+    width: 31px;
+    transition: .4s .1s;
+}
+
+@media (max-width: 999px) {
+    .mobile-menu {
+        display: flex;
+    }
+
+    .active .line1{
+        transform: rotate(135deg);
+    }
+    
+    .active .line2{
+        display: none;  
+    }
+    
+    .active .line3{
+        transform: rotate(-135deg);
+        top: -9px;
+    }
+}
+
+@keyframes widthLine {
+  from {
+    width: 0;
+  }
+  to{
+    width: 30px;
+  }
+}
