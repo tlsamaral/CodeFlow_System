@@ -1,0 +1,119 @@
+.slide-banner {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.slide-content {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.slide-content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    width: 700px;
+    text-align: left;
+    color: #f0ad31;
+    text-shadow: 5px 3px 5px #00000065;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 25px;
+}
+
+.slide-content ul{
+    list-style-type: disc;
+    color: #FFDD1C;
+    padding-left: 50px;
+}
+
+.slide-content p {
+    color: #fff;
+    text-shadow: 5px 3px 5px #00000065;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size: 1.4rem;
+    width: 700px;
+    margin-top: 30px;
+}
+  
+.slide-banner .button {
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    padding-left: 120px;
+}
+
+.slide-banner .button > button {
+    height: 55px;
+    width: 250px;
+    border-radius: 50px;
+    background: #f8b334;
+    color: #fff;
+    text-shadow: 2px 2px 3px #00000065;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    box-shadow: 5px 3px 5px #00000018;
+    cursor: pointer;
+}
+
+.content-2 {
+    align-items: center;
+}
+
+.content-2 h2 {
+    width: 80%;
+    text-align: center;
+}
+
+.content-2 p {
+    width: 70%;
+    text-align: center;
+}
+
+.content-3 {
+    align-items: flex-end;
+}
+
+.content-3 h2 {
+    text-align: right;
+}
+
+.content-3 p {
+    text-align: right;
+}
+
+.content-3 ol > li {
+    font-size: 1.65rem;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 5px 3px 5px #00000018;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.content-3 ol > li ul {
+    list-style: disc;
+}
+
+.content-3 ol > li ul li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+.content-3 .button {
+    justify-content: flex-end;
+}
