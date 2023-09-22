@@ -5,10 +5,9 @@ import AppContext from './AppContext';
 function Provider({children}) {
   const [activeMenu, setActiveMenu] = useState(false);
 
-
   const value = {
     activeMenu, 
-    setActiveMenu 
+    setActiveMenu
   };
 
   return ( 

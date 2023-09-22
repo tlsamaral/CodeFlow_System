@@ -43,17 +43,17 @@ a:hover {
   }
   .nav-list {
     position: absolute;
-    top: 8vh;
+    top: 90px;
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: #252525;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform .3s ease-in;
-    z-index: 1;
+    z-index: 9;
   }
 
   .nav-list li{

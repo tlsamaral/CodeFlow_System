@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Banners from '../Banners/Banners';
+import ProductGateway from '../ProductGateway/ProductGateway';
 
 function Main() {
   return ( 
-    <Banners />
+    <Fragment>
+      <Banners />
+      <ProductGateway />
+    </Fragment>
   );  
 }
 
