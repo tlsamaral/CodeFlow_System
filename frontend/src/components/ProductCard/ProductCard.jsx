@@ -15,7 +15,7 @@ function ProductCard(props) {
 
   return ( 
     <div 
-      className={`product-card ${ isComingSoon ? 'desabled' : ''} ${isSelected ? 'selected blink' : ''}`}
+      className={`product-card ${ isComingSoon ? 'disabled' : ''} ${isSelected ? 'selected blink' : ''}`}
       onClick={() => {
         onClick();
         setBtnMoreInfo(!btnMoreInfo);

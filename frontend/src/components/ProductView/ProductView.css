@@ -1,0 +1,13 @@
+.product-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 20px 20px 20px;
+    gap: 30px;
+}
+
+.product-view ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

@@ -28,8 +28,8 @@ h3 {
     align-items: center;
 }
 
-.product-card.desabled {
-    background: #eeeeee;
+.product-card.disabled {
+    background: #dfdfdf;
 }
 
 .product-card.selected {
@@ -64,45 +64,20 @@ h3 {
     color: #0897E9;
     padding-top: 5px;
 }
-/* .product-card .area-more-info > p {
-    opacity: 1;
-    transition: opacity 0.2s ease-in .4s;
-    visibility: visible;
-}
 
-.product-card .area-more-info > span {
-    display: none;
-    opacity: 0;
-    transition: opacity .2s ease-in-out .4s;
-}
-
-.product-card.selected .area-more-info > p {
-    display: none;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    transition: opacity 0.2s ease .2s;
-}
-
-.product-card.selected .area-more-info > span {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.2s ease-in .4s;
-    visibility: visible;
-} */
 
 @keyframes blink {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
     50% {
-      transform: scale(1.1);
+        transform: scale(1.1);
     }
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
   
-  .blink {
+.blink {
     animation: blink 1s normal;
-  }
+}

@@ -1,0 +1,62 @@
+{
+    "products": [{
+        "name": "iPet",
+        "id": 1,
+        "description": "Sistema de gestão para petshop e/ou clínicas veterinárias",
+        "isComingSoon": false,
+        "categories": [
+          {
+            "id": 1,
+            "name": "teste"
+          },
+          {
+            "id": 2,
+            "name": "teste"
+          },
+          {
+            "id": 3,
+            "name": "teste"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Smart Circuits",
+        "description": "Sistema de gestão para petshop e/ou clínicas veterinárias",
+        "isComingSoon": true,
+        "categories": [
+          {
+            "id": 1,
+            "name": "teste 2"
+          },
+          {
+            "id": 2,
+            "name": "teste 2"
+          },
+          {
+            "id": 3,
+            "name": "teste 2"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Mais Ajuda",
+        "description": "Sistema de gestão para petshop e/ou clínicas veterinárias",
+        "isComingSoon": true,
+        "categories": [
+          {
+            "id": 1,
+            "name": "teste 3"
+          },
+          {
+            "id": 2,
+            "name": "teste 3"
+          },
+          {
+            "id": 3,
+            "name": "teste 3"
+          }
+        ]
+      }]
+}

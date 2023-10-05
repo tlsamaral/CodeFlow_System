@@ -1,0 +1,25 @@
+.product-category {
+    height: auto;
+    width: 260px;
+    border-radius: 50px;
+    background: #fff;
+    color: #0897e9;
+    border: solid 1px #0897e9;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background .4s ease-in;
+}
+
+.product-category.active {
+    background: #0897e9;
+    color: #fff;
+}
+
+.product-category > span {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
