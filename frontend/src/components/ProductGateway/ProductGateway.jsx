@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+//import axios from 'axios';
 import ProductCard from '../ProductCard/ProductCard';
 import './ProductGateway.css';
 import ProductView from '../ProductView/ProductView';
 import ProductViewLoading from '../ProductViewLoading/ProductViewLoading';
 
 function ProductGateway() {
+  
+
   const products = [
     {
       id: 1,
@@ -76,7 +79,10 @@ function ProductGateway() {
       ]
     }
   ];
- 
+
+    
+  //console.log(axios.get('http://localhost:3001/products').then(resp => console.log(resp.data)));
+
   const productInitial = products.find(p => p.id === 1);
 
   const [selectedProduct, setSelectedProduct] = useState(productInitial);

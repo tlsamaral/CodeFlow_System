@@ -10,7 +10,7 @@
     color: #022336;
 }
 
-h3 {
+.product-card>h3 {
     margin: auto;
     text-align: center;
 }
