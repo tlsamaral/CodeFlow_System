@@ -4,10 +4,13 @@ import AppContext from './AppContext';
 
 function Provider({children}) {
   const [activeMenu, setActiveMenu] = useState(false);
+  const [closeChat, setCloseChat] = useState(true);
 
   const value = {
     activeMenu, 
-    setActiveMenu
+    setActiveMenu,
+    closeChat, 
+    setCloseChat
   };
 
   return ( 

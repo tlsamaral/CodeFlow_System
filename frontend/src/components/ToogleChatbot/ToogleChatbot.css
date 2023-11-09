@@ -1,0 +1,38 @@
+.toogle-chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: solid 1px #0897E9;
+    background-color: #fff;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    z-index: 5;
+    cursor: pointer;
+    box-shadow: 0px 4px 9px #00000055;
+    transform: translateY(0%);
+    transition: transform .6s ease;
+    animation: fade .4s ease;
+    animation-direction: reverse;
+}
+
+.toogle-chatbot.close {
+    transform: translateY(120%);
+    animation: fade .3s ease;
+}
+
+.toogle-chatbot > img {
+    height: 70%;
+    width: 70%;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+        transform: translateY(120%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

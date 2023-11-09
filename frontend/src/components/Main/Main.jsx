@@ -4,6 +4,9 @@ import ProductGateway from '../ProductGateway/ProductGateway';
 import EngageBanner from '../EngageBanner/EngageBanner';
 import FeedbackArea from '../FeedbackArea/FeedbackArea';
 import ClientFeedBackArea from '../ClientFeedbackArea/ClientFeedBackArea';
+//import ContactForm from '../ContactForm/ContactForm';
+import Chatbot from '../Chatbot/Chatbot';
+import ToogleChatbot from '../ToogleChatbot/ToogleChatbot';
 
 
 function Main() {
@@ -14,6 +17,8 @@ function Main() {
       <EngageBanner />
       <FeedbackArea />
       <ClientFeedBackArea />
+      <Chatbot />
+      <ToogleChatbot />
     </Fragment>
   );  
 }

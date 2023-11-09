@@ -56,16 +56,7 @@ function FeedbackSummary({ averageRating, totalComments, satisfiedCustomers }) {
         <div className="feedback-item">
           <AiOutlineBarChart style={style} />
           <h3>Avaliação Média</h3>
-          <div className="skill">
-            <div className="outer">
-              <div className="inner">
-                <div id="number">
-                  {counter}%
-                </div>
-              </div>
-            </div>
-
-          </div>
+          <p>{counter}%</p>
         </div>
 
         <div className="feedback-item">
@@ -80,7 +71,7 @@ function FeedbackSummary({ averageRating, totalComments, satisfiedCustomers }) {
           <p>{satisfiedCustomers}</p>
         </div>
       </div>
-      <button>Meu feedback</button>
+      <button className="meu-feedback">Meu feedback</button>
     </div>
     
   );
