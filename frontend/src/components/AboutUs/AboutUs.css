@@ -1,0 +1,70 @@
+.about-us {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #f9f9f9;
+    background-image: radial-gradient(rgba(168, 168, 168, 0.106) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 20px;
+}
+
+.content-about-us {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.content-about-us h2 {
+    width: 100%;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #086ea9;
+    font-weight: 600;
+}
+
+.content-about-us .text-about-us {
+    font-size: 1.4rem;
+    width: 70%;
+    max-width: 1665px;
+    margin: auto;
+    text-indent: 25px;
+    text-align: justify;
+    color: #063e5f;
+} 
+
+.content-about-us .text-about-us p {
+    font-weight: 500;
+    text-shadow: -1px 2px 4px #00000036;
+}
+
+.custom-shape-divider-top-1699920100 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+
+.custom-shape-divider-top-1699920100 svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 174px;
+}
+
+.custom-shape-divider-top-1699920100 .shape-fill {
+    fill: #e8e8e8;
+}

@@ -96,7 +96,7 @@ function ProductGateway() {
   };
 
   return ( 
-    <div className="product-gateway">
+    <div className="product-gateway" id="productGateway">
       <h2 className="h2">Otimize sua Operação e Potencialize a Produtividade com Nossos Softwares de Automação de Processos</h2>
 
       <div className="products-area container">

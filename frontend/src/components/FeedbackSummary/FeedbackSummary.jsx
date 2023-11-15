@@ -1,17 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import propTypes from 'prop-types';
+import AppContext from '../../context/AppContext';
 import { AiOutlineComment, AiOutlineBarChart, AiOutlineHeart } from 'react-icons/ai'; 
 import './FeedbackSummary.css';
 
 function FeedbackSummary({ averageRating, totalComments, satisfiedCustomers }) {
   const [count, setCount] = useState(0);
   const [counter, setCounter] = useState(0);
-  
+  const { setModalIsOpen } = useContext(AppContext);
+
+  console.log(averageRating);
+
   const style = {
     fontSize: '40px'
   };
-  console.log(averageRating);
-
+ 
   const targetRating = 74; // Valor desejado para a média
 
   useEffect(() => {
@@ -50,6 +53,11 @@ function FeedbackSummary({ averageRating, totalComments, satisfiedCustomers }) {
     requestAnimationFrame(updateCount);
   }, [totalComments]);
 
+  function openModal() {
+    document.body.style.overflow = 'hidden'; 
+    setModalIsOpen(true);
+  }
+    
   return (
     <div>
       <div className="feedback-summary">
@@ -71,9 +79,9 @@ function FeedbackSummary({ averageRating, totalComments, satisfiedCustomers }) {
           <p>{satisfiedCustomers}</p>
         </div>
       </div>
-      <button className="meu-feedback">Meu feedback</button>
+      <button className="meu-feedback" onClick={openModal}>Meu feedback</button>
+
     </div>
-    
   );
 }
 

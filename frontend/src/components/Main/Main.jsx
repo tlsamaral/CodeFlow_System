@@ -7,7 +7,8 @@ import ClientFeedBackArea from '../ClientFeedbackArea/ClientFeedBackArea';
 //import ContactForm from '../ContactForm/ContactForm';
 import Chatbot from '../Chatbot/Chatbot';
 import ToogleChatbot from '../ToogleChatbot/ToogleChatbot';
-
+import AboutUs from '../AboutUs/AboutUs';
+import ModalFeedback from '../ModalFeedback/ModalFeedback';
 
 function Main() {
   return ( 
@@ -17,7 +18,9 @@ function Main() {
       <EngageBanner />
       <FeedbackArea />
       <ClientFeedBackArea />
+      <AboutUs />
       <Chatbot />
+      <ModalFeedback />
       <ToogleChatbot />
     </Fragment>
   );  

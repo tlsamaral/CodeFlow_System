@@ -2,8 +2,6 @@ import React, { Fragment } from 'react';
 import './ContactForm.css';
 
 function ContactForm() {
-
-
   return (
     <Fragment>
       <div className="container">

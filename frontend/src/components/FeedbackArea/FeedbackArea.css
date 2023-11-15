@@ -3,7 +3,10 @@ section.section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  padding: 100px 20px 200px 20px;
+
+  background: #fff;
+  position: relative;
 }
 
 section.section > h2 {
@@ -44,4 +47,22 @@ section.section > p {
   }
   
 
-  
+  .custom-shape-divider-bottom-1699923656 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1699923656 svg {
+    position: relative;
+    display: block;
+    width: calc(164% + 1.3px);
+    height: 181px;
+}
+
+.custom-shape-divider-bottom-1699923656 .shape-fill {
+    fill: #E8E8E8;
+}
