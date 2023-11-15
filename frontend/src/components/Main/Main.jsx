@@ -9,6 +9,7 @@ import Chatbot from '../Chatbot/Chatbot';
 import ToogleChatbot from '../ToogleChatbot/ToogleChatbot';
 import AboutUs from '../AboutUs/AboutUs';
 import ModalFeedback from '../ModalFeedback/ModalFeedback';
+import ContactForm from '../ContactForm/ContactForm';
 
 function Main() {
   return ( 
@@ -22,6 +23,7 @@ function Main() {
       <Chatbot />
       <ModalFeedback />
       <ToogleChatbot />
+      <ContactForm />
     </Fragment>
   );  
 }
