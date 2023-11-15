@@ -6,10 +6,8 @@ const cors = require('cors')
 const app = express();
 const port = 3002;
 
-const user = 'codeflowinnovation@outlook.com'
-//const user = 'no.reply@cfinnovation.com.br'
-//const pass = 'NRcfinnovation1#'
-const pass = '#cf12345678'
+const user = ''
+const pass = ''
 
 app.use(cors())
 app.use(bodyParser.json());
@@ -32,7 +30,7 @@ app.post('/send', (req, res) => {
 
     transporter.sendMail({
         from: user,
-        to: email || 'rafaeltalles535@gmail.com',
+        to: email,
         subject: "Olá, seja bem vindo a Code Flow",
         text: `Olá ${nome}`,
     })
