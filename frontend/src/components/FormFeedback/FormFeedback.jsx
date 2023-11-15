@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,12 +8,14 @@ import './FormFeedback.css';
 
 
 function FormFeedback() {
-  const [feedback, setFeedback] = useState({
+  const initialState = {
     name: '',
     comment: '',
     rating: 0,
     submissionDate: null,
-  });
+  };
+
+  const [feedback, setFeedback] = useState(initialState);
 
   const { setComments } = useContext(AppContext);
 
@@ -33,36 +35,42 @@ function FormFeedback() {
     }));
   };
 
-  const submitFormFeedback = (e) => {
+  const submitFormFeedback = async (e) => {
     e.preventDefault();
-
+  
     const currentDate = new Date();
-
+  
     setFeedback((prevFeedback) => ({
       ...prevFeedback,
       submissionDate: currentDate,
     }));
-
-
-    const baseUrl = 'http://localhost:3001/comments';
-    const method = 'post';
-
-    axios[method](baseUrl, feedback).then(resp => {
-      setComments((prev) => {
-        toast.success('O seu feedback é muito importante para nós.', {
-          position: 'top-right',
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: 'light',
-        });
-        return [...prev, resp.data];
-      });
-    });
   };
+  
+  useEffect(() => {
+    if (feedback.submissionDate) {
+      const baseUrl = 'http://localhost:3001/comments';
+      const method = 'post';
+  
+      axios[method](baseUrl, feedback).then((resp) => {
+        setComments((prev) => {
+          toast.success('O seu feedback é muito importante para nós.', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          });
+
+          setFeedback(initialState);
+          
+          return [...prev, resp.data];
+        });
+      });
+    }
+  }, [feedback.submissionDate]);
 
   return (
     <form onSubmit={submitFormFeedback} className="feedback-form">
