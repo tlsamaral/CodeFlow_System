@@ -6,8 +6,8 @@ const cors = require('cors')
 const app = express();
 const port = 3002;
 
-const user = 'codeflowinnovation@outlook.com'
-const pass = '#cf12345678'
+const user = ''
+const pass = ''
 
 app.use(cors())
 app.use(bodyParser.json());
