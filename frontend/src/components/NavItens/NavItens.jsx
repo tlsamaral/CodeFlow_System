@@ -42,7 +42,7 @@ function NavItens() {
         <ScrollToComponent targetId="productGateway">Produtos</ScrollToComponent>
       </li>
       <li>
-        <ScrollToComponent targetId="footer">Contatos</ScrollToComponent>
+        <ScrollToComponent targetId="contactForm">Contatos</ScrollToComponent>
       </li>
     </ul>
   );

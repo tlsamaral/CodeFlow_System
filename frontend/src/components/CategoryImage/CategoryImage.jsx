@@ -8,7 +8,7 @@ function CategoryImage(props) {
   return (
     <div>
       {category.image ? (
-        <img src={`data:image/png;base64,${category.image.data}`} alt="" />
+        <img className="img" src={`data:image/png;base64,${category.image.data}`} alt="" />
       ) : (
         <div className="image-loading loading"></div>
       )}

@@ -10,7 +10,6 @@ import './PartialCommentCarousel.css'; // Estilos CSS personalizados
 
 // Componente de Comentário Individual
 function Comment({ name ,rating, comment, submissionDate }) {
-  console.log(name ,rating, comment, submissionDate);
   const formattedDate = formatDistanceToNow(new Date(submissionDate), { addSuffix: true });
   
   const createStars = () => {
@@ -51,7 +50,6 @@ function Comment({ name ,rating, comment, submissionDate }) {
 
 // Componente do Carousel de Comentários com partes visíveis do anterior e do próximo
 function PartialCommentCarousel({ comments }) {
-  console.log(comments);
 
   var settings = {
     dots: true,
